@@ -8,6 +8,15 @@
 
     h1{
         font-size: 50px;
+
+        @include tablet{
+            font-size: 37px;
+        }
+
+        @include mobile{
+            font-size: 22px;
+        }
+
     }
 
     ul{
@@ -15,18 +24,35 @@
         padding: 0;
         list-style: none;
         display: flex;
+
+        @include mobile{
+            margin: 10px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     .container{
         width: 85%;
         display: flex;
         align-items: center;
-        justify-self: center;
+        justify-content: center;
         flex-wrap: wrap;
 
+        @include tablet{
+            width: 92%;
+            justify-content: center;
+            display: wrap;
+            
+        }
+
+        @include mobile{
+            width: 100%;
+        }
+
         .item{
-            width: 250px;
-            height: 180px;
+            width: 380px;
+            height: 250px;
             border-radius: 20px;
             border: 1px solid lightgrey;
             margin: 10px 20px;
@@ -37,6 +63,22 @@
             position: relative;
             transition: all 0.5s ease;
             cursor: pointer;
+
+            @include desk{
+                width: 450px;
+                height: 290px;
+            }
+
+            @include tablet{
+                width: 300px;
+                height: 200px;
+            }
+
+            @include mobile{
+                width: 235px;
+                height: 160px;
+                overflow: hidden;
+            }
 
             h3{
                 position: absolute;

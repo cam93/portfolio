@@ -7,6 +7,14 @@
     border-radius: 15px;
     cursor: pointer;
 
+    @include mobile{
+        margin-right: 20px;
+    }
+
+    @include tablet{
+        margin-right: 10px;
+    }
+
     &.active{
         background-color: $mainColor;
         color: white;

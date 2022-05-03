@@ -1,14 +1,50 @@
+@import "../../global.scss";
+
 .projects{
     background-color: #7E8A97;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+
+    .arrow{
+        height: 55px;
+        position: absolute;
+        cursor: pointer;
+
+        @include mobile{
+            display: none;
+        }
+
+        &.left{
+            left: 100px;
+            transform: rotateY(180deg);
+        }
+
+        &.right{
+            right: 100px;
+        }
+    }
 
     .slider{
         height: 350px;
         display: flex;
         position: absolute;
         left: 0;
+        transition: all 1s ease-out;
+
+        @include tablet{
+            height: 90vh;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        @include mobile{
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+        }
 
         .container{
             width: 100vw;
@@ -17,18 +53,30 @@
             justify-content: center;
 
             .item{
-                width: 700px;
+                width: 800px;
                 height: 100%;
                 background-color: white;
-                border-radius: 20px;
+                border-radius: 30px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
 
+                @include tablet{
+                    width: 90%;
+                    margin: 5px 0;
+                    height:190px;
+                }
+
+                @include mobile{
+                    width: 90%;
+                    height: 170px;
+                    margin: 10px 0;
+                }
+
 
                 .left{
                     flex: 4;
-                    height: 800%;
+                    height: 80%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -41,26 +89,26 @@
                         justify-content: space-between;
                     
 
-                            .imgContainer{
-                                width: 40px;
-                                height: 40px;
-                                border-radius: 50%;
-                                background-color: rgb(254, 166, 133);
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
+                        .imgContainer{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background-color: rgb(254, 166, 133);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
 
-                                    img{
-                                        width: 25px;
-                                    }
+                                img{
+                                    width: 30px;
+                                }
 
                             }
 
-                            
+
                         }
 
                     h2{
-                        font-size: 25px;
+                        font-size: 22px;
                     }
 
                     p{
@@ -71,6 +119,7 @@
                         font-size: 12px;
                         font-weight: 600;
                         text-decoration: underline;
+                        cursor: pointer;
                     }
 
                     
@@ -79,6 +128,15 @@
                 .right{
                     flex: 8;
                     height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+
+                    img{
+                        width: 400px;
+                        transform: rotate(-10deg);
+                    }
                     
                 }
             }
