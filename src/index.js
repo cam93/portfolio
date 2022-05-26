@@ -4,6 +4,7 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  // *Comment below pieces of Code because this cause duplication of the iType feature*
   // <React.StrictMode>
      <App />
   // </React.StrictMode>

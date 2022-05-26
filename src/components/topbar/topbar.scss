@@ -10,6 +10,11 @@
     z-index: 3;
     transition: all 1.2s ease;
 
+    @include mobile{
+        height: 50px;
+        overflow: hidden;
+    }
+
     .wrapper{
         padding: 10px 30px;
         display: flex; // all text is going to be horizontal

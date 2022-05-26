@@ -146,6 +146,7 @@
 
                         @include mobile{
                             font-size: 12px;
+                            overflow: hidden;
                         }
                     }
 
@@ -158,6 +159,7 @@
 
                         @include mobile{
                             font-size: 10px;
+                            overflow: hidden;
                         }
                     }
                     span{
@@ -165,6 +167,11 @@
                         font-weight: 600;
                         text-decoration: underline;
                         cursor: pointer;
+
+                        @include mobile{
+                            font-size: 11px;
+                            overflow: hidden;
+                        }
                     }
 
                     
@@ -180,7 +187,7 @@
 
                     img{
                         width: 400px;
-                        transform: rotate(-10deg);
+                        transform: rotate(-15deg);
 
                         @include tablet{
                             width: 365px;
@@ -190,6 +197,7 @@
                         @include mobile{
                             width: 280px;
                             height: 330px;
+                            z-index: 0;
                         }
                     }
                     
