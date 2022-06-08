@@ -1,5 +1,7 @@
 import "./topbar.scss"
 import {Person,Mail} from "@material-ui/icons"
+import DownloadIcon from '@mui/icons-material/Download';
+import CV from "../../assets/MARTINDALE_Resume.pdf"
 
 export default function Topbar({menuOpen, setMenuOpen}) {
   return (
@@ -14,6 +16,12 @@ export default function Topbar({menuOpen, setMenuOpen}) {
           <div className="itemContainer">
             <Mail className="icon"/>
             <span>Martindale93@outlook.com</span>
+          </div>
+          <div className="downloadIcon">
+            <DownloadIcon className="icon"/>
+          </div>
+          <div className="downloadButton">
+            <a href={CV} className="download" download>Download CV</a>
           </div>
         </div>
         <div className="right">

@@ -1126,6 +1126,11 @@
   dependencies:
     "postcss-value-parser" "^4.2.0"
 
+"@emailjs/browser@^3.6.2":
+  "integrity" "sha512-Swc8w+vwDX4XPy6tPegOFGSwHqNiEmEsIKbtAkqHo2WqnS0ORZUnnuZats2R3XqwfxNQD0F6RwnlVWHIMf6sCQ=="
+  "resolved" "https://registry.npmjs.org/@emailjs/browser/-/browser-3.6.2.tgz"
+  "version" "3.6.2"
+
 "@emotion/babel-plugin@^11.7.1":
   "integrity" "sha512-Pr/7HGH6H6yKgnVFNEj2MVlreu3ADqftqjqwUvDy/OJzKFgxKeTQ+eeUf20FOTuHVkDON2iNa25rAXVYtWJCjw=="
   "resolved" "https://registry.npmjs.org/@emotion/babel-plugin/-/babel-plugin-11.9.2.tgz"
@@ -1554,7 +1559,14 @@
     "prop-types" "^15.8.1"
     "react-is" "^17.0.2"
 
-"@mui/material@^5.8.1":
+"@mui/icons-material@^5.8.2":
+  "integrity" "sha512-fP6KUCCZZjc2rdbMSmkNmBHDskLkmP0uCox57cbVXvomU6BOPrCxnr5YXsSsQrZB8fchx7hfH0bkAgvMZ5KM0Q=="
+  "resolved" "https://registry.npmjs.org/@mui/icons-material/-/icons-material-5.8.2.tgz"
+  "version" "5.8.2"
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+
+"@mui/material@^5.0.0", "@mui/material@^5.8.1":
   "integrity" "sha512-Vl3BHFzOcAT5TJfvzoQUyuo/Xckn+/NSRyJ8upM4Hbz6Y1egW6P8f1RCa4FdkEfPSd5wSSYdmPfAiEh8eI4rPg=="
   "resolved" "https://registry.npmjs.org/@mui/material/-/material-5.8.1.tgz"
   "version" "5.8.1"

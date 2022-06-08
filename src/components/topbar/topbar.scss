@@ -10,11 +10,6 @@
     z-index: 3;
     transition: all 1.2s ease;
 
-    @include mobile{
-        height: 50px;
-        overflow: hidden;
-    }
-
     .wrapper{
         padding: 10px 30px;
         display: flex; // all text is going to be horizontal
@@ -32,6 +27,28 @@
                 color: inherit;
                 margin-right: 35px;
             }
+
+            .downloadIcon{
+                margin: 0 -17px 0 20px;
+                font-size: 5px;
+            }
+
+            .downloadButton{
+                align-items: center;
+                margin-left: 20px;
+                width: max-content;
+                background-color: $secondaryColor;
+                padding: 0.35rem 0.7rem;
+                border-radius: 0.4rem;
+                cursor: pointer;
+                border: 1px solid black;
+
+                .download{
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: inherit;
+                }
+            }
     
             .itemContainer{
                 display: flex;
@@ -46,7 +63,6 @@
                     font-size: 18px;
                     margin-right: 5px;
                 }
-    
     
                 span{
                     font-size: 15px;
@@ -78,7 +94,7 @@
 
     &.active{
         background-color: $mainColor;
-        color: black;
+        color: whitesmoke;
 
         .hamburger{
             span{
