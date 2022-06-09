@@ -3,6 +3,7 @@
 .intro{
     background-color: White;
     display: flex;
+    
 
     @include tablet{
         flex-direction: column-reverse;
